@@ -11,6 +11,7 @@ public class TReducer extends Reducer<TQ, IntWritable, Text, IntWritable> {
 	Text rkey = new Text();
 	IntWritable rval = new IntWritable();
 
+	@SuppressWarnings("unused")
 	@Override
 	protected void reduce(TQ key, Iterable<IntWritable> values, Reducer<TQ, IntWritable, Text, IntWritable>.Context context)
 			throws IOException, InterruptedException {
